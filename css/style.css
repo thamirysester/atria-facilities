@@ -261,11 +261,14 @@ HEADER
     align-items:center;
 
 }
-
 .logo img{
+    width: 170px;
+}
 
-    width:140px;
-
+@media (max-width: 768px){
+    .logo img{
+        width: 135px;
+    }
 }
 
 .menu{
