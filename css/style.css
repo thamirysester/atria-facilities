@@ -1456,9 +1456,7 @@ RESPONSIVIDADE
 
 .header.scroll{
 
-    height:110px;
-
-    box-shadow:0 12px 35px rgba(0,0,0,.12);
+    height:80px;
 
 }
 
@@ -1637,25 +1635,24 @@ RESPONSIVIDADE
 
 /* RESPONSIVO */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-    .depoimentos-grid{
-
-        grid-template-columns:1fr;
-
+    .header{
+        height:80px;
+        padding:0;
     }
 
-    .depoimento-card{
-
-        padding:35px 25px;
-
+    .header .container{
+        height:100%;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        gap:0;
     }
 
-    .depoimento-card img{
-
-        width:95px;
-        height:95px;
-
+    .logo img{
+        width:120px;
     }
 
 }
