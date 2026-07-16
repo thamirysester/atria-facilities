@@ -323,67 +323,6 @@ HEADER
 
 }
 
-/* ==========================
-MENU MOBILE
-========================== */
-
-.menu-toggle{
-
-    display:none;
-
-    font-size:30px;
-
-    cursor:pointer;
-
-    color:var(--primary);
-
-}
-
-@media(max-width:900px){
-
-.menu-toggle{
-
-    display:block;
-
-    z-index:1001;
-
-}
-
-.menu{
-
-    position:fixed;
-
-    top:0;
-
-    right:-100%;
-
-    width:280px;
-
-    height:100vh;
-
-    background:#fff;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    gap:30px;
-
-    transition:.4s;
-
-    box-shadow:-10px 0 30px rgba(0,0,0,.15);
-
-}
-
-.menu.ativo{
-
-    right:0;
-
-}
-
-}
 
 /* ==========================
 HERO
@@ -1653,6 +1592,41 @@ RESPONSIVIDADE
 
     .logo img{
         width:120px;
+    }
+
+}
+.header-buttons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+@media (max-width:768px){
+
+    .header{
+        height:80px;
+        padding:0;
+    }
+
+    .header .container{
+        height:80px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .logo img{
+        width:110px;
+        height:auto;
+    }
+
+    .header-buttons{
+        gap:10px;
+    }
+
+    .btn-header{
+        padding:10px 18px;
+        font-size:14px;
     }
 
 }
